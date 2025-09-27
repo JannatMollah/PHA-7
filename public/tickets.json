@@ -75,7 +75,7 @@
     "id": 1009,
     "title": "Delayed Refund",
     "description": "Customer refund for order #4623 is delayed for over a week.",
-    "customer": "Liam Martinez",
+    "customer": "Emily Davis",
     "priority": "MEDIUM PRIORITY",
     "status": "In-Progress",
     "createdAt": "2/20/2024"

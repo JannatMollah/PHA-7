@@ -2,7 +2,7 @@ import React from 'react';
 
 const StatusCard = () => {
     return (
-        <div className="max-w-[1200px] mt-10 mx-auto flex items-center justify-between">
+        <div className="max-w-[1200px] mt-10 mx-auto flex items-center justify-between gap-3">
 
             <div className="relative text-white rounded-lg w-[590px] h-[200px] flex flex-col items-center justify-center bg-gradient-to-r from-[#632EE3] to-[#9F62F2]">
                 <div className="absolute inset-0 bg-[url('/vector1.png')] bg-no-repeat transform -scale-x-100"></div>

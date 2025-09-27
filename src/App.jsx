@@ -6,6 +6,13 @@ import Footer from './components/Footer/Footer'
 import BottomFooter from './components/Footer/BottomFooter'
 import AllTickets from './components/AllTickets/AllTickets'
 
+const fetchTickets = async () => {
+  const res = await fetch('/tickets.json')
+  return res.json();
+}
+
+const ticketsPromise = fetchTickets();
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -13,7 +20,7 @@ function App() {
     <>
       <Navbar></Navbar>
       <StatusCard></StatusCard>
-      <AllTickets></AllTickets>
+      <AllTickets ticketsPromise={ticketsPromise}></AllTickets>
       <Footer></Footer>
       <BottomFooter></BottomFooter>
     </>
