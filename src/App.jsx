@@ -5,6 +5,8 @@ import StatusCard from './components/StatusCard/StatusCard'
 import Footer from './components/Footer/Footer'
 import BottomFooter from './components/Footer/BottomFooter'
 import AllTickets from './components/AllTickets/AllTickets'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const fetchTickets = async () => {
   const res = await fetch('/tickets.json')
@@ -14,16 +16,21 @@ const fetchTickets = async () => {
 const ticketsPromise = fetchTickets();
 
 function App() {
-  const [taskStatus, setTaskStatus] = useState([]);
-  const [resolvedTask, setResolvedTask] = useState([]);
-  
+  const [inProgressCount, setInProgressCount] = useState(0);
+  const [resolvedCount, setResolvedCount] = useState(0);
+
   return (
     <>
       <Navbar></Navbar>
-      <StatusCard></StatusCard>
-      <AllTickets ticketsPromise={ticketsPromise} taskStatus={taskStatus} setTaskStatus={setTaskStatus} resolvedTask={resolvedTask} setResolvedTask={setResolvedTask}></AllTickets>
+      <StatusCard inProgressCount={inProgressCount} resolvedCount={resolvedCount}></StatusCard>
+      <AllTickets 
+        ticketsPromise={ticketsPromise} 
+        setInProgressCount={setInProgressCount}
+        setResolvedCount={setResolvedCount}
+      ></AllTickets>
       <Footer></Footer>
       <BottomFooter></BottomFooter>
+      <ToastContainer position="bottom-right" autoClose={3000} />
     </>
   )
 }

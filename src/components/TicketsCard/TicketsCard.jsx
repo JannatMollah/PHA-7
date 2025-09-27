@@ -1,13 +1,15 @@
 import React from 'react';
 
-const TicketsCard = ({ticket,taskStatus,setTaskStatus}) => {
-
-    const handleTaskStatus = (tickets) => {
-        setTaskStatus([...taskStatus,tickets]);
-    }
+const TicketsCard = ({ ticket, onAddToInProgress }) => {
+    const handleClick = () => {
+        onAddToInProgress(ticket);
+    };
 
     return (
-        <div className="card w-100 bg-base-100 card-sm shadow-sm cursor-pointer" onClick={()=>handleTaskStatus(ticket)}>
+        <div 
+            className="card w-100 bg-base-100 card-sm shadow-sm cursor-pointer" 
+            onClick={handleClick}
+        >
             <div className="card-body">
                 <div className="flex items-center justify-between">
                     <h2 className="card-title">{ticket.title}</h2>
@@ -22,7 +24,7 @@ const TicketsCard = ({ticket,taskStatus,setTaskStatus}) => {
                     <div className="flex items-center justify-center text-sm text-[#627382] gap-2">
                         <p>{ticket.customer}</p>
                         <div className="flex items-center gap-1">
-                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span><i className="fa-regular fa-calendar"></i></span>
                             <p>{ticket.createdAt}</p>
                         </div>
                     </div>

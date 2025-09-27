@@ -1,6 +1,6 @@
 import React from 'react';
 
-const StatusCard = () => {
+const StatusCard = ({ inProgressCount, resolvedCount }) => {
     return (
         <div className="max-w-[1200px] mt-10 mx-auto flex items-center justify-between gap-3">
 
@@ -8,14 +8,14 @@ const StatusCard = () => {
                 <div className="absolute inset-0 bg-[url('/vector1.png')] bg-no-repeat transform -scale-x-100"></div>
                 <div className="absolute inset-0 bg-[url('/vector1.png')] bg-no-repeat"></div>
                 <p>In-Progress</p>
-                <span className="font-semibold text-4xl">0</span>
+                <span className="font-semibold text-4xl">{inProgressCount}</span>
             </div>
 
             <div className=" relative bg-linear-to-r from-[#54CF68] to-[#00827A] text-white rounded-lg w-[590px] h-[200px] flex flex-col items-center justify-center">
                 <div className="absolute inset-0 bg-[url('/vector1.png')] bg-no-repeat transform -scale-x-100"></div>
                 <div className="absolute inset-0 bg-[url('/vector1.png')] bg-no-repeat"></div>
                 <p>Resolved</p>
-                <span className="font-semibold text-4xl">0</span>
+                <span className="font-semibold text-4xl">{resolvedCount}</span>
             </div>
         </div>
     );
