@@ -10,7 +10,6 @@
 - **State**
   - A component’s own internal data, managed within the component.
   - Mutable => can be updated using setState or useState.
-  - 
 - **Props**
   - Short for properties, used to pass data from parent to child.
   - Immutable => cannot be changed by child component.
