@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1001,
+    "title": "Login Issues - Can't Access Account",
+    "description": "Customer is unable to log in to their account. They've tried multiple times but still has problem.",
+    "customer": "John Smith",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/15/2024"
+  },
+  {
+    "id": 1002,
+    "title": "Refund Not Processed",
+    "description": "Customer requested a refund two weeks ago but has not received the amount yet.",
+    "customer": "Sophia Taylor",
+    "priority": "LOW PRIORITY",
+    "status": "In-Progress",
+    "createdAt": "1/20/2024"
+  },
+  {
+    "id": 1003,
+    "title": "Payment Failed",
+    "description": "Customer attempted payment using credit card, but transaction keeps failing.",
+    "customer": "Michael Johnson",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2/01/2024"
+  },
+  {
+    "id": 1004,
+    "title": "Order Not Delivered",
+    "description": "Customer's order #4521 was not delivered even after estimated delivery date.",
+    "customer": "Emily Davis",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In-Progress",
+    "createdAt": "2/05/2024"
+  },
+  {
+    "id": 1005,
+    "title": "Account Suspended",
+    "description": "Customer reported that their account was suspended without notification.",
+    "customer": "William Brown",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2/10/2024"
+  },
+  {
+    "id": 1006,
+    "title": "Incorrect Billing",
+    "description": "Customer received a bill with incorrect charges for last month.",
+    "customer": "Olivia Wilson",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In-Progress",
+    "createdAt": "2/12/2024"
+  },
+  {
+    "id": 1007,
+    "title": "App Crash on Startup",
+    "description": "Customer reports the mobile app crashes immediately after opening.",
+    "customer": "James Miller",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2/15/2024"
+  },
+  {
+    "id": 1008,
+    "title": "Unable to Update Profile",
+    "description": "Customer cannot update profile information; changes are not saved.",
+    "customer": "Emma Garcia",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "2/18/2024"
+  },
+  {
+    "id": 1009,
+    "title": "Delayed Refund",
+    "description": "Customer refund for order #4623 is delayed for over a week.",
+    "customer": "Liam Martinez",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In-Progress",
+    "createdAt": "2/20/2024"
+  },
+  {
+    "id": 1010,
+    "title": "Feature Request - Dark Mode",
+    "description": "Customer suggests adding dark mode in the mobile app for better usability.",
+    "customer": "Ava Anderson",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "2/25/2024"
+  }
+]

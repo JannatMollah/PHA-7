@@ -6,7 +6,7 @@ import inLogo from '../../assets/in.png'
 
 const Footer = () => {
     return (
-        <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 border-b-1 border-gray-700">
+        <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 border-b-1 border-gray-700 mt-10">
             <nav>
                 <h6 className="footer-title">CS — Ticket System</h6>
                 <p className="max-w-xs">Best customer support Service Provider in the world. We deliver fast, reliable,
