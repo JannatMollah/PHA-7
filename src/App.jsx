@@ -14,13 +14,14 @@ const fetchTickets = async () => {
 const ticketsPromise = fetchTickets();
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [taskStatus, setTaskStatus] = useState([]);
+  const [resolvedTask, setResolvedTask] = useState([]);
+  
   return (
     <>
       <Navbar></Navbar>
       <StatusCard></StatusCard>
-      <AllTickets ticketsPromise={ticketsPromise}></AllTickets>
+      <AllTickets ticketsPromise={ticketsPromise} taskStatus={taskStatus} setTaskStatus={setTaskStatus} resolvedTask={resolvedTask} setResolvedTask={setResolvedTask}></AllTickets>
       <Footer></Footer>
       <BottomFooter></BottomFooter>
     </>

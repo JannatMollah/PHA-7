@@ -1,8 +1,13 @@
 import React from 'react';
 
-const TicketsCard = ({ticket}) => {
+const TicketsCard = ({ticket,taskStatus,setTaskStatus}) => {
+
+    const handleTaskStatus = (tickets) => {
+        setTaskStatus([...taskStatus,tickets]);
+    }
+
     return (
-        <div className="card w-100 bg-base-100 card-sm shadow-sm cursor-pointer" >
+        <div className="card w-100 bg-base-100 card-sm shadow-sm cursor-pointer" onClick={()=>handleTaskStatus(ticket)}>
             <div className="card-body">
                 <div className="flex items-center justify-between">
                     <h2 className="card-title">{ticket.title}</h2>
